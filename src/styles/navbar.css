@@ -1,0 +1,38 @@
+.navbar{
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,.9);
+}
+
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.links{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 15px;
+}
