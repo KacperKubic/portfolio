@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgb(32, 31, 31);
+    background: rgb(43, 41, 41);;
 }
 
 .image{
@@ -42,13 +42,30 @@
     margin: 10px;
 }
 
+.content .aboutLinks{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
 .content button{
-    width: 50%;
-    height: 40px;
-    background-color: rgba(40, 144, 204, 0.541);;
+    width: 200px;
+    height: 100px;
+    background-color: inherit;
     font-size: 20px;
     color: white;
-    border: 1px black solid;
-    border-radius: 20px;
+    border: none;
     margin: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.content .icon{
+    font-size: 70px;
+    color: white;
+}
+
+.content a{
+    text-decoration: none;
 }

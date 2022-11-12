@@ -8,7 +8,7 @@
     background-color: rgba(0,0,0,.9);
 }
 
-.logo{
+.navLogo{
     width: 25%;
     display: flex;
     justify-content: center;
@@ -16,14 +16,14 @@
     color: white;
 }
 
-.links{
+.navLinks{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact{
+.navContact{
     width: 25%;
     display: flex;
     align-items: center;
@@ -35,4 +35,34 @@
     color: white;
     font-size: 18px;
     margin: 15px;
+}
+
+.navToggle{
+    display: none;
+}
+
+@media screen and (max-width: 860px){
+    .navToggle{
+        display: block;
+    }
+
+    .navLinks{
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        top: -100%;
+        background-color: rgba(0,0,0,0.9);
+        text-align: center;
+        transition: .3s;;
+    }
+
+    .navLinks.active{
+        top: 80px;
+    }
+
+    .link{
+        margin: 1.5rem 0;
+    }
 }
