@@ -11,12 +11,12 @@ const About = () => {
                 <img src={image} alt='PhotoOfMyself'/>               
             </div>
             <div className='content'>
-                <h1>About me</h1>
-                <p>I am 20 years old certified IT technician and I am curentlly looking for my first job as a Junior Frontend Developer. For the past few months I was developing my skills while creating my own projects. I am a fast learner.</p>
+                <p className='title'>About me</p>
+                <p className='aboutParagraph'>I am 20 years old certified IT technician and I am curentlly looking for my first job as a Junior Frontend Developer. For the past few months I was developing my skills while creating my own projects. I am a fast learner.</p>
                 <div className='aboutLinks'>
-                    <button><a href='a'><FaFileDownload className='icon'/><p>Get my resume</p></a></button>
-                    <button><a href='https://www.linkedin.com/in/kacper-kubic/'><FaLinkedin className='icon'/><p>My LinkedIn</p></a></button>
-                    <button><a href='https://github.com/kacperkubic'><FaGithub className='icon'/><p>My GitHub</p></a></button>
+                    <a href='a'><FaFileDownload className='icon'/><div className='tooltip'>Get my resume</div></a>
+                    <a href='https://www.linkedin.com/in/kacper-kubic/'><FaLinkedin className='icon'/><div className='tooltip'>My LinkedIn</div></a>
+                    <a href='https://github.com/kacperkubic'><FaGithub className='icon'/><div className='tooltip'>My GitHub</div></a>
                 </div>
             </div>
         </div>

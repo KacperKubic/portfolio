@@ -31,10 +31,31 @@
 }
 
 .link{
+    position: relative;
     text-decoration: none;
-    color: white;
+    cursor: pointer;
+    color: #a0a0a0;
     font-size: 18px;
     margin: 15px;
+}
+
+.link:after{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color: white;
+}
+
+.link:hover:after{
+    width: 100%;
 }
 
 .navToggle{

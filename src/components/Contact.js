@@ -17,9 +17,6 @@ const Contact = () => {
 
     return ( 
         <div className='contact'>
-            <div className='image'>
-
-            </div>
             <div className='form'>
                 <h1>Reach out to me</h1>
                 <form id='contactForm' onSubmit={onFormSubmit}>
@@ -31,6 +28,9 @@ const Contact = () => {
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows={6} placeholder='Enter message...' required/>
                     <button type='submit'>Send your message</button>
                 </form>
+            </div>
+            <div className='image'>
+
             </div>
         </div>
      );

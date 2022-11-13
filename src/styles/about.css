@@ -1,15 +1,16 @@
 .about{
     height: 100vh;
     width: 100%;
+    padding-top: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     background: rgb(43, 41, 41);;
 }
 
 .image{
     width: 40%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,8 +22,8 @@
     border-radius: 50%;
 }
 
-
 .content{
+    margin-top: 9em;
     width: 60%;
     height: 30%;
     display: flex;
@@ -30,42 +31,76 @@
     justify-content: left;
     padding-right: 10%;
 }
-.content h1{
+.content .title{
     font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 3px;
     color: white;
     margin: 10px;
+    margin-left: 33px;
 }
 
+
 .content p{
-    font-size: 20px;
+    font-size: 23px;
     color: white;
-    margin: 10px;
+    margin-left: 33px;
 }
 
 .content .aboutLinks{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
+    margin-top: 40px;
+    display: inline-flex;
     justify-content: left;
 }
 
-.content button{
-    width: 200px;
-    height: 100px;
-    background-color: inherit;
-    font-size: 20px;
-    color: white;
-    border: none;
-    margin: 10px;
+.aboutLinks a{
+    width: 150px;
+    margin: 0 20px;
+    margin-left: 0;
     display: flex;
-    justify-content: left;
-}
-
-.content .icon{
-    font-size: 70px;
-    color: white;
-}
-
-.content a{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
     text-decoration: none;
+}
+
+
+.aboutLinks .icon{
+    font-size: 80px;
+    color: white;
+    z-index: 2;
+}
+
+.aboutLinks a:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: -60px;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55)
+}
+
+.aboutLinks .tooltip{
+    background: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.aboutLinks .tooltip:before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    background: white;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    pointer-events: none;
 }

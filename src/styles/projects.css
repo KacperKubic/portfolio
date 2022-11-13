@@ -1,6 +1,7 @@
 .projects{
     height: 100vh;
     width: 100%;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,8 +11,10 @@
 .projects h1{
     font-size: 5rem;
     font-weight: 100;
+    letter-spacing: 2px;
     color: white;
     margin-top: 1.5em;
+    margin-bottom: 1rem;
 }
 
 .projectsList{
@@ -24,8 +27,8 @@
 
 .project{
     height: 500px;
-    width: 550px;
-    margin: 20px;
+    width: 600px;
+    margin: 15px;
 }
 
 .projectImage{
@@ -91,19 +94,84 @@
     border-bottom-left-radius: 15px;
 }
 
-.projectInfo h2{
+.projectInfo p{
     color: white;
     float: right;
     margin: 1rem;
+    letter-spacing: 2px;
     font-size: 1.5rem;
 }
 
-.projectInfo button{
-    color: white;
-    background-color: rgb(43, 41, 41);;
-    float: right;
-    margin: 15px;
-    width: 120px;
-    height: 50px;
-    border-radius: 10px;
+.projectLink{
+    position: relative;
+    padding: 10px 30px;
+    margin: 0 15px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.95rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.projectLink:hover{
+    background: #21ebff;
+    color: rgb(34, 33, 33);
+    box-shadow: 0 0 20px #21ebff;
+}
+
+.projectLink:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: 0.5s;
+}
+
+.projectLink:hover:before{
+    width: 100%;
+    height: 100%;
+}
+
+.projectLink::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: 0.5s;
+}
+
+.projectLink:hover:after{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .projects{
+        height: auto;
+    }
+
+    .projectsList{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        place-items: center;
+    }
+    
+    .project{
+        height: 500px;
+        width: 600px;
+        margin: 20px;
+    }
 }

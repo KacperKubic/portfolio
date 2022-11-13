@@ -11,9 +11,9 @@ const SingleProject = ({ buttonText, project} ) => {
                 </div> 
             </div>
             <div className='projectInfo'>
-                <h2>{project.name}</h2>
-                <button><a href={project.liveLink}>{buttonText}</a></button>
-                <button><a href={project.repoLink}>Source Code</a></button>
+                <p>{project.name}</p>
+                <a href={project.liveLink} className='projectLink'>{buttonText}</a>
+                <a href={project.repoLink} className='projectLink'>Source Code</a>
             </div>  
         </div>
      );
