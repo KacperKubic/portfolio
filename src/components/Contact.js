@@ -11,7 +11,7 @@ const Contact = () => {
         <div className='contact'>
             <div className='form'>
                 <h1>Reach out to me</h1>
-                <form id='contactForm' action="https://formsubmit.co/kacper.kubic2211@gmail.com" method="POST">
+                <form id='contactForm' action="https://formsubmit.co/48016cf2f83aa706fe47ed95be6efd57" method="POST">
                     <div className='inputBox'>
                         <input value={emial} onChange={(e) => setEmail(e.target.value)} type='email' name="email" required/>
                         <span>E-mail</span>

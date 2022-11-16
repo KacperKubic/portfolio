@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 
 import '../styles/about.css'
 import image from '../images/image.png';
+import Resume from '../Resume.pdf';
 
 const About = () => {
     const sentence = "projects".split("");
@@ -42,7 +43,7 @@ const About = () => {
                 <p className='title'>About me</p>
                 <p className='aboutParagraph'>I am 20 years old certified IT technician and I am curentlly looking for my first job as a Junior Frontend Developer. For the past few months I was developing my skills while building my own <span>{mappedSentence}</span>. I am fast learner and I am hungry for knowledge in the field of Front-end and Back-end development.</p>
                 <div className='aboutLinks'>
-                    <a href='Resume.pdf' download><FaFileDownload className='icon'/><div className='tooltip'>Get my resume</div></a>
+                    <a href={Resume} download><FaFileDownload className='icon'/><div className='tooltip'>Get my resume</div></a>
                     <a href='https://www.linkedin.com/in/kacper-kubic/'><FaLinkedin className='icon'/><div className='tooltip'>My LinkedIn</div></a>
                     <a href='https://github.com/kacperkubic'><FaGithub className='icon'/><div className='tooltip'>My GitHub</div></a>
                 </div>
