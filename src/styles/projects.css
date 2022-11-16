@@ -159,6 +159,7 @@
 @media screen and (max-width: 1600px) {
     .projects{
         height: auto;
+        justify-content: center;
     }
 
     .projectsList{
@@ -166,12 +167,55 @@
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        place-items: center;
+        justify-content: center;
     }
     
     .project{
         height: 500px;
         width: 600px;
         margin: 20px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .projects h1{
+        margin-top: 0;
+        font-size: 3rem;
+    }
+
+    .projectInfo{
+        flex-direction: column;
+     }
+
+    .project{
+        height: 800px;
+        width: 400px;
+        margin-top: 15px;
+    }
+
+    .projectLink {
+        padding: 10;
+        font-size: 0.75rem;
+        padding: 10px 25px;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .projects h1{
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+
+    .project{
+        height: 700px;
+        width: 270px;
+        margin: 5px;
+    }
+
+    .projectLink {
+        font-size: 0.6rem;
+        overflow: hidden;
+        transition: 0.5s;
     }
 }

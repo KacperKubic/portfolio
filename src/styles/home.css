@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(43, 41, 41);;
+    background: rgb(43, 41, 41);
+    margin-bottom: 3px;
 }
 
 .home h1{
@@ -20,4 +21,92 @@
     text-align: center;
     font-size: 30px;
     font-weight: 200;
+}
+
+.home button{
+    position: relative;
+    padding: 19px 36px;
+    margin-top: 40px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none; 
+}
+
+.home button span {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 4px;
+    z-index: 1;
+}
+
+.home button .liquid{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #21bbff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.home button .liquid::after,
+.home button .liquid::before{
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: rgb(43, 41, 41);
+}
+
+.home button .liquid::before{
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 15s linear infinite;
+}
+
+.home button .liquid::after{
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 20s linear infinite;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:hover .liquid{
+    top: -145px;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home h1{
+        font-size: 38px;
+    }
+    
+    .home h3{
+        font-size: 19px;
+
+    }
+
+    .home button{
+        padding: 16px 15px;;
+    }   
 }

@@ -1,33 +1,35 @@
-.navbar{
-    height: 80px;
-    width: 100%;
-    z-index: 1;
+.navbarDiv{
     position: fixed;
-    display: flex;
-    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
     background-color: rgba(0,0,0,.9);
 }
 
-.navLogo{
-    width: 25%;
+.navbar{
     display: flex;
-    justify-content: center;
+    height: 100%;
+    margin: auto;
+    padding: 0 1rem;
+    justify-content: space-between;
     align-items: center;
+}
+
+.navLogo{
+    display: flex;
+    width: 100%;
+    margin-left: 1rem;
     color: white;
 }
 
 .navLinks{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.navContact{
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: right;
 }
 
 .link{
@@ -63,6 +65,14 @@
 }
 
 @media screen and (max-width: 860px){
+    .navbarDiv{
+        max-width: 100%;
+    }
+
+    .navbar{
+        max-width: 100%;
+    }
+
     .navToggle{
         display: block;
     }
@@ -81,6 +91,7 @@
 
     .navLinks.active{
         top: 80px;
+        left: 0;
     }
 
     .link{

@@ -1,13 +1,15 @@
 import React from "react";
+import { FaRegCopyright, FaGithub, FaLinkedin } from "react-icons/fa"
 
 import '../styles/footer.css'
 
 const Footer = () => {
     return ( 
         <div className='footer'>
-            <h2>Copyrite</h2>
+            <p>Website made by Kacper Kubić | Copyright <FaRegCopyright/> 2022 All rights reserverd</p>
             <div className='links'>
-                githublinkedin
+                <a href='https://www.linkedin.com/in/kacper-kubic/'><FaLinkedin/></a>
+                <a href='https://github.com/kacperkubic'><FaGithub/></a>
             </div>
         </div>
      );
