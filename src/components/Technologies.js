@@ -7,7 +7,7 @@ const Technologies = () => {
     
     const technologiesList = TechnologiesList.map((technology) => {
         return (
-            <div className='technology'>
+            <div className='technology' key={technology.name}>
                 <img src={technology.image} alt={technology.name}/>
                 <h4>{technology.name}</h4>
             </div>

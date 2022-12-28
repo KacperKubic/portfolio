@@ -1,7 +1,7 @@
 import React from "react";
 
 import SingleProject from "./SingleProject";
-import { TerraShop, MovieApp, Blogs } from "../data";
+import { TerraShop, MovieApp, Blogs, ChatApp } from "../data";
 import '../styles/projects.css';
 
 
@@ -13,6 +13,7 @@ const Projects = () => {
                 <SingleProject buttonText='Liveview' project={TerraShop}/>
                 <SingleProject buttonText='Liveview' project={MovieApp}/>
                 <SingleProject buttonText='Screenshots' project={Blogs}/>
+                <SingleProject buttonText='Screenshots' project={ChatApp}/>
             </div>
         </div>
      );

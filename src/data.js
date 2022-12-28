@@ -4,10 +4,14 @@ import MovieAppImage from './images/MovieApp.png';
 import MovieAppMobile from './images/MovieAppMobile.png';
 import BlogsImage from './images/Blogs.png';
 import BlogsMobile from './images/BlogsMobile.png'
+import ChatImage from './images/chatapp1.PNG';
+import ChatMobile from './images/chatapp2.PNG'
 import HTML from './images/HTML.png';
 import CSS from './images/CSS.png';
 import JS from './images/JS.png';
+import TS from './images/TS.png';
 import REACT from './images/REACT.png';
+import REDUX from './images/REDUX.png'
 import NODEJS from './images/NODEJS.png';
 import MYSQL from './images/MYSQL.png';
 
@@ -38,6 +42,15 @@ export const Blogs = {
     imageMobile: BlogsMobile,
 }
 
+export const ChatApp = {
+    name: 'Chat',
+    liveLink: 'https://drive.google.com/drive/u/1/folders/1oC9IauTacMYF1wY1GkzLowAf5t0Ryzlx',
+    repoLink: 'https://github.com/KacperKubic/chat-app',
+    description: 'Fullstack chat app made with Node.js, React and Socket.io. It allows two users to join a chat room with same ID and text eachother.',
+    image: ChatImage,
+    imageMobile: ChatMobile,
+}
+
 export const TechnologiesList = [
     {
         name: 'HTML',
@@ -52,8 +65,16 @@ export const TechnologiesList = [
         image: JS,
     },
     {
+        name: 'TypeScript',
+        image: TS,
+    },
+    {
         name: 'React',
         image: REACT,
+    },
+    {
+        name: 'Redux',
+        image: REDUX,
     },
     {
         name: 'NodeJS',
