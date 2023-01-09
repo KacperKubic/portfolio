@@ -64,7 +64,7 @@
     display: none;
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 1050px){
     .navbarDiv{
         max-width: 100%;
     }
