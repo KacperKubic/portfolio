@@ -2,6 +2,8 @@ import TerraShopImage from './images/TerraShop.png';
 import TerraShopMobile from './images/TerraShopMobile.png';
 import MovieAppImage from './images/MovieApp.png';
 import MovieAppMobile from './images/MovieAppMobile.png';
+import GoogleClone from './images/google-clone.png'
+import GoogleCloneMobile from './images/google-clone-phone.PNG'
 import BlogsImage from './images/Blogs.png';
 import BlogsMobile from './images/BlogsMobile.png'
 import ChatImage from './images/chatapp1.PNG';
@@ -34,7 +36,7 @@ export const MovieApp = {
 }
 
 export const Blogs = {
-    name: 'Blogs',
+    name: 'Blogs App',
     liveLink: 'https://drive.google.com/drive/u/1/folders/17uX4gM9hvbgSXTgHD2_Mt70CKgbgiPrT',
     repoLink: 'https://github.com/KacperKubic/Blogs',
     description: 'Fullstack website made with Node.js and React. It allows the user to add and read blogs. It uses MySQL to store all the data.',
@@ -43,13 +45,23 @@ export const Blogs = {
 }
 
 export const ChatApp = {
-    name: 'Chat',
+    name: 'Chat App',
     liveLink: 'https://drive.google.com/drive/u/1/folders/1oC9IauTacMYF1wY1GkzLowAf5t0Ryzlx',
     repoLink: 'https://github.com/KacperKubic/chat-app',
     description: 'Fullstack chat app made with Node.js, React and Socket.io. It allows two users to join a chat room with same ID and text eachother.',
     image: ChatImage,
     imageMobile: ChatMobile,
 }
+
+export const GoogleSearchClone = {
+    name: 'Google Clone',
+    liveLink: 'https://kacper-kubic-google-clone.vercel.app',
+    repoLink: 'https://github.com/KacperKubic/google-search-clone',
+    description: 'Google Search Clone. It uses Google Custom Search Engine API that returns different websites links based on search term.',
+    image: GoogleClone,
+    imageMobile: GoogleCloneMobile,
+}
+
 
 export const TechnologiesList = [
     {
