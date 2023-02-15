@@ -16,6 +16,8 @@ import REACT from './images/REACT.png';
 import REDUX from './images/REDUX.png'
 import NODEJS from './images/NODEJS.png';
 import MYSQL from './images/MYSQL.png';
+import Spotify from './images/Spotify.png';
+import SpotifyMobile from './images/SpotifyMobile.PNG';
 
 export const TerraShop = {
     name: 'Terra Shop',
@@ -60,6 +62,15 @@ export const GoogleSearchClone = {
     description: 'Google Search Clone. It uses Google Custom Search Engine API that returns different websites links based on search term.',
     image: GoogleClone,
     imageMobile: GoogleCloneMobile,
+}
+
+export const SpotifyClone = {
+    name: 'Spotify Clone',
+    liveLink: 'https://kacper-kubic-spotify-clone.vercel.app/',
+    repoLink: 'https://github.com/KacperKubic/spotify-clone',
+    description: 'Spotify Clone made with React and CSS. It uses official Spotify Web API. To use Spotify Web Player you need premium account',
+    image: Spotify,
+    imageMobile: SpotifyMobile,
 }
 
 
