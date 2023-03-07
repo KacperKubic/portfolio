@@ -18,6 +18,9 @@ import NODEJS from './images/NODEJS.png';
 import MYSQL from './images/MYSQL.png';
 import Spotify from './images/Spotify.png';
 import SpotifyMobile from './images/SpotifyMobile.PNG';
+import Wordle from './images/wordle.png';
+import WordleMobile from './images/wordle-mobile.png';
+
 
 export const TerraShop = {
     name: 'Terra Shop',
@@ -73,6 +76,14 @@ export const SpotifyClone = {
     imageMobile: SpotifyMobile,
 }
 
+export const WordleClone = {
+    name: 'Wordle Clone',
+    liveLink: 'https://kacper-kubic-wordle.vercel.app',
+    repoLink: 'https://github.com/KacperKubic/wordle-clone',
+    description: 'Clone of the popular Wordle game made with React and CSS.',
+    image: Wordle,
+    imageMobile: WordleMobile,
+}
 
 export const TechnologiesList = [
     {
