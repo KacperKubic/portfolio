@@ -71,7 +71,7 @@ export const SpotifyClone = {
     name: 'Spotify Clone',
     liveLink: 'https://kacper-kubic-spotify-clone.vercel.app/',
     repoLink: 'https://github.com/KacperKubic/spotify-clone',
-    description: 'Spotify Clone made with React and CSS. It uses official Spotify Web API. To use Spotify Web Player you need premium account',
+    description: 'Spotify Clone made with React and CSS. It uses official Spotify Web API. Unfortunately due to free Spotify API limitation I have to add users who can use it manually on Spotify API dashbord that is why I cannot create live version of this project',
     image: Spotify,
     imageMobile: SpotifyMobile,
 }
